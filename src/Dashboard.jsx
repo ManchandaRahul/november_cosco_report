@@ -141,20 +141,21 @@ const Dashboard = () =>{
       status: 'Migration planned (Medium-term)'
     },
 
-    {
-      cause: 'Platform Limits (Connectors/OTP)',
-      severity: 'Low',
-      frequency: 'Persistent',
-      impact: 'Intermittent failures',
-      status: 'Mitigated via Office Scripts'
-    },
+   
     {
       cause: 'UI Element Brittleness',
       severity: 'High',
       frequency: 'Jul, Aug, Oct',
       impact: 'Automation exceptions',
       status: 'Selector hardening applied'
-    }
+    },
+     {
+      cause: 'Platform Limits (Connectors/OTP)',
+      severity: 'Low',
+      frequency: 'Persistent',
+      impact: 'Intermittent failures',
+      status: 'Mitigated via Office Scripts'
+    },
   ];
 
   // === HELPERS ===
@@ -225,81 +226,65 @@ const Dashboard = () =>{
           </div>
         </div>
       </div>
-
-{/* ==== QUICK STATS BANNER – 3 ROWS ==== */}
+{/* ==== QUICK STATS BANNER ==== */}
 <div className="bg-white border-b shadow-sm">
-  <div className="max-w-7xl mx-auto px-6 py-4">
-     {/* ROW 2: "20" + "High Level Tasks" */}
-    <div className="grid-cols-2 gap-4 mb-6">
-      <div className="text-center">
-        <div className="text-2xl font-bold text-black">High Level Tasks - 20</div>
-        </div>
-
-           
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+  <div className="max-w-7xl mx-auto px-6 py-8">
     
-    {/* ROW 1: HOUR TOTALS */}
-    <div className="grid grid-cols-5 gap-4 mb-6">
+    {/* ROW 1: Main Title - Centered */}
+    <div className="text-center mb-8">
+      <h2 className="text-3xl font-bold text-black">High Level Tasks - 20</h2>
+    </div>
+
+    {/* ROW 2: Activity Counts (194, 121, 18, 23, 32) */}
+    <div className="grid grid-cols-5 gap-8 mb-10">
       <div className="text-center">
-        <div className="text-2xl font-bold text-gray-900">527.5 hrs</div>
-        <div className="text-xs text-gray-600">Total Support</div>
+        <div className="text-3xl font-bold text-gray-900">194</div>
+        <div className="text-sm text-gray-600 mt-1">Activities under high level task</div>
       </div>
       <div className="text-center">
-        <div className="text-2xl font-bold text-blue-600">218 hrs</div>
-        <div className="text-xs text-gray-600">Regular Maintenance</div>
+        <div className="text-3xl font-bold text-blue-700">121</div>
+        <div className="text-sm text-gray-600 mt-1">Regular Maintenance</div>
       </div>
       <div className="text-center">
-        <div className="text-2xl font-bold text-green-600">80.5 hrs</div>
-        <div className="text-xs text-gray-600">Issue/Bugs</div>
+        <div className="text-3xl font-bold text-green-600">18</div>
+        <div className="text-sm text-gray-600 mt-1">Issue/Bugs</div>
       </div>
       <div className="text-center">
-        <div className="text-2xl font-bold text-amber-600">81.5 hrs</div>
-        <div className="text-xs text-gray-600">R&D</div>
+        <div className="text-3xl font-bold text-amber-600">23</div>
+        <div className="text-sm text-gray-600 mt-1">R&D</div>
       </div>
       <div className="text-center">
-        <div className="text-2xl font-bold text-red-600">147.5 hrs</div>
-        <div className="text-xs text-gray-600">CR/Enhancements</div>
+        <div className="text-3xl font-bold text-red-600">32</div>
+        <div className="text-sm text-gray-600 mt-1">CR/Enhancements</div>
       </div>
     </div>
 
-   
-
-    {/* ROW 3: "- 194 Activities" (same style as "20") + COUNT VALUES */}
-    <div className="grid grid-cols-5 gap-4">
-       <div className="text-center">
-        <div className="text-2xl font-bold text-gray-900">Breakup of 194 →</div>
-        <div className="text-xs text-gray-600">Activities</div>
-      </div>
-
+    {/* ROW 3: Hour Totals */}
+    <div className="grid grid-cols-5 gap-8">
       <div className="text-center">
-        <div className="text-2xl font-bold text-blue-700">121</div>
-        <div className="text-xs text-gray-600">Regular Maintenance</div>
+        <div className="text-3xl font-bold text-gray-900">527.5 hrs</div>
+        <div className="text-sm text-gray-600 mt-1">Total Support</div>
       </div>
-
       <div className="text-center">
-        <div className="text-2xl font-bold text-green-600">18</div>
-        <div className="text-xs text-gray-600">Issue/Bugs</div>
+        <div className="text-3xl font-bold text-blue-600">218 hrs</div>
+        <div className="text-sm text-gray-600 mt-1">Regular Maintenance</div>
       </div>
-
       <div className="text-center">
-        <div className="text-2xl font-bold text-amber-600">23</div>
-        <div className="text-xs text-gray-600">R&D</div>
+        <div className="text-3xl font-bold text-green-600">80.5 hrs</div>
+        <div className="text-sm text-gray-600 mt-1">Issue/Bugs</div>
       </div>
-
       <div className="text-center">
-        <div className="text-2xl font-bold text-red-600">32</div>
-        <div className="text-xs text-gray-600">CR/Enhancements</div>
+        <div className="text-3xl font-bold text-amber-600">81.5 hrs</div>
+        <div className="text-sm text-gray-600 mt-1">R&D</div>
+      </div>
+      <div className="text-center">
+        <div className="text-3xl font-bold text-red-600">147.5 hrs</div>
+        <div className="text-sm text-gray-600 mt-1">CR/Enhancements</div>
       </div>
     </div>
-
   </div>
 </div>
 {/* ==== END BANNER ==== */}
-
 
       {/* Navigation */}
       <div className="bg-white shadow">
