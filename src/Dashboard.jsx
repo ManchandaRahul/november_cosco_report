@@ -219,7 +219,7 @@ const Dashboard = () =>{
     href="https://coscoamcmonitor.vercel.app/"
     className="inline-flex items-center gap-2 text-sm text-blue-100 hover:text-white mb-3"
   >
-    ← Back to COSCO AMC Monitoring
+    ← Back 
   </a>
           <div className="flex justify-between items-center">
             <div>
