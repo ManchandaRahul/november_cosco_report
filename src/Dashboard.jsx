@@ -219,7 +219,7 @@ const Dashboard = () =>{
     href="https://coscoamcmonitor.vercel.app/"
     className="inline-flex items-center gap-2 text-sm text-blue-100 hover:text-white mb-3"
   >
-    ← Back 
+    <b><u>Back</u></b> 
   </a>
           <div className="flex justify-between items-center">
             <div>
@@ -716,7 +716,7 @@ const Dashboard = () =>{
             <div className="bg-white rounded-lg shadow-lg p-6 border-t-4 border-indigo-600">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-3 h-3 rounded-full bg-indigo-600"></div>
-                <h3 className="text-lg font-bold">Phase 2: Full Automation & Scalability</h3>
+                <h3 className="text-lg font-bold">Phase 1,2: Full Automation & Scalability</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start gap-3 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
@@ -744,6 +744,13 @@ const Dashboard = () =>{
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-indigo-900">Import document convert from draft to Final.</p>
+                  </div>
+                </div>
+
+                 <div className="flex items-start gap-3 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-indigo-900">AI features - extract UTR from payment receipt, NOC auto approval</p>
                   </div>
                 </div>
               </div>
@@ -785,8 +792,8 @@ const Dashboard = () =>{
                 </div>
               </div>
             </div>  
-            <div class="bg-white rounded-lg shadow-lg p-6"><div class="flex items-center gap-3 mb-4"><div class="w-3 h-3 rounded-full bg-yellow-500"></div><h3 class="text-lg font-bold">Phase 1: Platform Strengthening (1–3 months)</h3></div><div class="space-y-3"><div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database w-5 h-5 text-yellow-600 mt-0.5"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg><div><p class="font-medium">Migrate from Excel</p><p class="text-sm text-gray-600">To SharePoint / Dataverse / Azure SQL</p></div></div><div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-5 h-5 text-yellow-600 mt-0.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><div><p class="font-medium">Replace OTP with Token API</p></div></div></div></div>
-             <div class="bg-white rounded-lg shadow-lg p-6"><div class="flex items-center gap-3 mb-4"><div class="w-3 h-3 rounded-full bg-green-500"></div><h3 class="text-lg font-bold">Phase 0: Stabilisation (0–4 weeks)</h3></div><div class="space-y-3"><div class="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-green-600 mt-0.5"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg><div><p class="font-medium">HyperCare for Office Scripts</p><p class="text-sm text-gray-600">2-week monitoring post-deployment</p></div></div><div class="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-5 h-5 text-green-600 mt-0.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><div><p class="font-medium">Automated Alerts</p><ul class="text-sm text-gray-600 ml-4 mt-1 list-disc"><li>Queue &gt;24h</li><li>Duplicates in batch</li><li>Archive failures</li></ul></div></div></div></div>
+            {/* <div class="bg-white rounded-lg shadow-lg p-6"><div class="flex items-center gap-3 mb-4"><div class="w-3 h-3 rounded-full bg-yellow-500"></div><h3 class="text-lg font-bold">Phase 1: Platform Strengthening (1–3 months)</h3></div><div class="space-y-3"><div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database w-5 h-5 text-yellow-600 mt-0.5"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg><div><p class="font-medium">Migrate from Excel</p><p class="text-sm text-gray-600">To SharePoint / Dataverse / Azure SQL</p></div></div><div class="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-5 h-5 text-yellow-600 mt-0.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><div><p class="font-medium">Replace OTP with Token API</p></div></div></div></div>
+             <div class="bg-white rounded-lg shadow-lg p-6"><div class="flex items-center gap-3 mb-4"><div class="w-3 h-3 rounded-full bg-green-500"></div><h3 class="text-lg font-bold">Phase 0: Stabilisation (0–4 weeks)</h3></div><div class="space-y-3"><div class="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-green-600 mt-0.5"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg><div><p class="font-medium">HyperCare for Office Scripts</p><p class="text-sm text-gray-600">2-week monitoring post-deployment</p></div></div><div class="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-5 h-5 text-green-600 mt-0.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><div><p class="font-medium">Automated Alerts</p><ul class="text-sm text-gray-600 ml-4 mt-1 list-disc"><li>Queue &gt;24h</li><li>Duplicates in batch</li><li>Archive failures</li></ul></div></div></div></div> */}
           </div>
         )}
       </div>
